@@ -1,0 +1,50 @@
+
+.form-container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  .container > form {
+    width: 70%;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  pre {
+    width: 70%;
+    color: #fff;
+    font-size: larger;
+  }
+  
+  .btn {
+    background: #0563b4 !important;
+  }
+  
+  .data-preview{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+  }
+
+  .steps{
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
