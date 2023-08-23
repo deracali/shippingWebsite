@@ -4,10 +4,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
     max-width: 500px;
     width: 100%;
     margin: auto;
+  }
+  .formheight{
+    height: 1300px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  .mgb{
+    margin-bottom: 10px;
+  }
+  .p{
+    margin-bottom:5px;
   }
   .container > form {
     width: 70%;
@@ -47,4 +63,7 @@
     align-items: center;
   }
 
+  .steps div span{
+    font-size: 13px;
+  }
   

@@ -21,10 +21,9 @@ const search = (e)=>{
 
  setLoading(true)
     // GET request using axios inside useEffect  React hook
-    axios.get('http://localhost:3000/search/' + number)
+    axios.get('https://premiumexpress.onrender.com/search/' + number)
         .then(response => setItem(response.data));
-  console.log(item)
-  console.log(number)
+  
   // empty dependency array means this effect will only run once (like componentDidMount in classes)
  setLoading(false)
  
@@ -33,7 +32,7 @@ const search = (e)=>{
 return (
     <>
     <Header/>
-    <div className="form-container">
+    <div className={item.data? "form-container" : "formheight"}>
     <form>
       <h1>Tracking Number Form</h1>
       <div className="ui divider"></div>
@@ -51,6 +50,7 @@ return (
           />
         </div>
         <button onClick={search} className="fluid ui button blue">Submit</button>
+     <p>Past Tracking No</p>
       </div>
     </form>
 
@@ -58,8 +58,8 @@ return (
       {item.map((item)=>(
       <div key={item._id}>
       <div className='location'>
-      <div className='Location'><BsMap size={18}/> {item.location}</div>
-      <div className='Address'><HiLocationMarker size={20}/> {item.address}</div>
+      <div className='Location'><p>Destination</p> <BsMap size={18}/> {item.location}</div>
+      <div className='Address'><p>Address</p><HiLocationMarker size={20}/> {item.address}</div>
       </div>
       <div className='steps'>
 <div><span>Left Warehouse</span><IoMdCheckmarkCircle color='green'/></div>
@@ -69,7 +69,44 @@ return (
 
 <div className='arrival'><span>{item.arrival}</span>{item.arrival? <FaPlaneArrival color={item.arrival? "green" : ""} /> : ""} </div>
       </div>
-
+<div>
+  <div className='mgb'>
+    <p className='p'>Carrier</p>
+    <p>Packages</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Type of Shipment</p>
+    <p>{item.shipmentMethod}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Weight</p>
+    <p>{item.weight}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Shipment method</p>
+    <p>{item.shipmentMethod}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Carrier Reference No</p>
+    <p>{item.carrierReferenceNo}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Product</p>
+    <p>{item.product}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Qty</p>
+    <p>{item.qty}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Payment Mode</p>
+    <p>{item.paymentMethod}</p>
+  </div>
+  <div className='mgb'>
+    <p className='p'>Expected Delivery Date</p>
+    <p>{item.expectDeliveryDate}</p>
+  </div>
+</div>
       </div>
       ))}
 

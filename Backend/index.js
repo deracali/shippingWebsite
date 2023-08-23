@@ -7,10 +7,10 @@ app.use(express.json())
 app.use(cors());
 
 // DB connection
-console.log(process.env.DB_API_KEY)
+// console.log(process.env.DB_API_KEY)
 // const db = "mongodb+srv://chideracalistus:economic00@cluster0.aryyobw.mongodb.net/test?retryWrites=true"
 mongoose
-    .connect(process.env.DB_API_KEY)
+    .connect("mongodb+srv://chideracalistus:economic00@cluster0.aryyobw.mongodb.net/test?retryWrites=true")
     .then(() => console.log('MongoDB connected...'))
     .catch(err => console.log(err));
 
@@ -19,11 +19,20 @@ mongoose
 const sch = {
     number:String,
     location:String,
+    packages:String,
     address:String,
     checkpoint1:String,
     checkpoint2:String,
     checkpoint3:String,
-    arrival:String
+    arrival:String,
+    weight:String,
+    shipmentMethod:String,
+    carrierReferenceNo:String,
+    product:String,
+    qty:String,
+    paymentMethod:String,
+    expectedDeliveryDate:String
+
 }
 
 const monmodel = mongoose.model("NEWCOL",sch)
@@ -51,7 +60,15 @@ app.post("/post",async(req,res)=>{
         checkpoint1:req.body.checkpoint1,
         checkpoint2:req.body.checkpoint2,
         checkpoint3:req.body.checkpoint3,
-        arrival:req.body.arrival
+        arrival:req.body.arrival,
+        weight:req.body.weight,
+    shipmentMethod:req.body.shipmentMethod,
+    carrierReferenceNo:req.body.carrierReferenceNo,
+    product:req.body.product,
+    qty:req.body.qty,
+    paymentMethod:req.body.paymentMethod,
+    expectedDeliveryDate:req.body.expectedDeliveryDate,
+    package:req.body.packages
     })
 
     const val = await data.save()

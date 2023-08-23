@@ -16,7 +16,7 @@ export default function Footer() {
         <p className="footer-text">
           Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
         </p>
-
+<p>Email: CustomerCarePremiumExpress@gmail.com </p>
         {/* <ul className="social-list">
 
           <li>
@@ -135,7 +135,7 @@ export default function Footer() {
 
     <div className="footer-bottom">
       <p className="copyright">
-        &copy; 2022 Transportio. All Rights Reserved by <a href="#" className="copyright-link">codewithsadee</a>
+        &copy; 2023 Premium Express. All Rights Reserved by <a href="#" className="copyright-link">Premium Express</a>
       </p>
     </div>
 

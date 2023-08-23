@@ -3,17 +3,30 @@ import React from 'react'
 import './form.css'
 import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/header'
+import { useNavigate} from 'react-router-dom';
+
 
 
 export default function Form() {
    const [number,setNumber] = useState('')
   const [location,setLocation] = useState('')
   const [address,setAddress] = useState('')
+  const [packages,setPackages] = useState('')
+  const [weight,setWeight] = useState('')
+  const [shipmentMethod,setShipmentMethod] = useState('')
+  const [carrierReferenceNo,setCarrierReferenceNo] = useState('')
+  const [product,setProduct] = useState('')
+  const [qty,setQty] = useState('')
+  const [paymentMethod,setPaymentMethod] = useState('')
+  const [expectedDeliveryDate,setExpectedDeliveryDate] = useState('')
+
+  const navigate = useNavigate();
+
 
 const handleFormSubmit = async(e)=>{
   e.preventDefault()
 const data = {number,location,address}
-  const response = await fetch('http://localhost:3000/post',{
+  const response = await fetch('https://premiumexpress.onrender.com/post',{
 method:'POST',
 body:JSON.stringify(data),
 headers:{
@@ -21,12 +34,13 @@ headers:{
 }
   })
   const json = await response.json()
+  navigate('/');
 }
 
   return (
     <>
     <Header/>
-    <div className="form-container">
+    <div className="formheight">
     <form method='post' action='#' onSubmit={handleFormSubmit}>
       <h1>Tracking Number Form</h1>
       <div className="ui divider"></div>
@@ -66,6 +80,102 @@ headers:{
             value={address}
             onChange={(e)=>{
               setAddress(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Packages</label>
+          <input
+            type="text"
+            name="packages"
+            placeholder="Packages"
+            value={packages}
+            onChange={(e)=>{
+              setPackages(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Payment Method</label>
+          <input
+            type="text"
+            name="paymentMethod"
+            placeholder="Payment Method"
+            value={paymentMethod}
+            onChange={(e)=>{
+              setPaymentMethod(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Qty</label>
+          <input
+            type="text"
+            name="qty"
+            placeholder="Quantity"
+            value={qty}
+            onChange={(e)=>{
+              setQty(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Weight</label>
+          <input
+            type="text"
+            name="weight"
+            placeholder="Weight"
+            value={weight}
+            onChange={(e)=>{
+              setWeight(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Product</label>
+          <input
+            type="text"
+            name="product"
+            placeholder="Product"
+            value={product}
+            onChange={(e)=>{
+              setProduct(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Shipment Method</label>
+          <input
+            type="text"
+            name="shipmentMethod"
+            placeholder="Shipmenth Method"
+            value={shipmentMethod}
+            onChange={(e)=>{
+              setShipmentMethod(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Carrier Reference No</label>
+          <input
+            type="text"
+            name="carrierNo"
+            placeholder="Carrier No"
+            value={carrierReferenceNo}
+            onChange={(e)=>{
+              setCarrierReferenceNo(e.target.value)
+            }}
+          />
+        </div>
+        <div className="field">
+          <label>Expect Delivery Date</label>
+          <input
+            type="text"
+            name="expectedDeliveryDate"
+            placeholder="Expected Delivery"
+            value={expectedDeliveryDate}
+            onChange={(e)=>{
+              setExpectedDeliveryDate(e.target.value)
             }}
           />
         </div>

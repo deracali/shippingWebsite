@@ -44,7 +44,7 @@ export default function Body() {
         </h2>
 
         <p className="hero-text">
-          There are many variations of passages of worem Ipsum available, but the majority
+        Welcome to Premium Express. We offer door-to-door shipping to more than 200 countries—connecting people and businesses all over the world.   
         </p>
 
         <a href="#" className="btn-outline">View Services</a>
@@ -80,8 +80,7 @@ export default function Body() {
             <h2 className="h2 section-title">We Are Professional Logistics & cargo Agency</h2>
 
             <p className="section-text">
-              Sed ut perspiciatis unde omnis iste natus error volup tatem accusantium dolorem que laudantium, totam
-              inventore.
+            Take your business to the next level with our expertise. With direct access to our global network and wide portfolio of shipping services, connect with people and businesses around the world. 
             </p>
 
             <ul className="about-list">
@@ -206,7 +205,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                Every day, we go to great lengths to connect people and businesses all over the planet. 
                 </p>
 
                 <a href="#" className="btn-link">
@@ -230,7 +229,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                Our fast, extensive road network across Europe provides a wide range of delivery services to meet your customer
                 </p>
 
                 <a href="#" className="btn-link">
@@ -254,7 +253,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                Our quality and service are frequently recognised by external organisations. Many of these awards and accreditations
                 </p>
 
                 <a href="#" className="btn-link">
@@ -278,7 +277,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                perceptions and values of employees and subcontractors with regards to safety.
                 </p>
 
                 <a href="#" className="btn-link">
@@ -302,7 +301,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                Many of these awards and accreditations are made on a national basis - an overview of these can be found on our country websites...
                 </p>
 
                 <a href="#" className="btn-link">
@@ -330,9 +329,7 @@ export default function Body() {
               <h2 className="h2 section-title">Has a wide range of solutions</h2>
 
               <p className="section-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever
-                since the when an
-                printer took.
+              Take complete control of deliveries with your own dedicated road vehicle
               </p>
             </div>
 
@@ -411,9 +408,7 @@ export default function Body() {
           <h2 className="h2 section-title">Featured Projects</h2>
 
           <p className="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
+          Don’t lose a minute of productivity with your shipment sent by the fastest possible route.
           </p>
 
           <ul className="project-list">
@@ -581,9 +576,7 @@ export default function Body() {
           <h2 class="h2 section-title">Recent news & events</h2>
 
           <p class="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
+          We live a balanced and busy life working from home, and sharing the joys we experience every day with our beloved minis!
           </p>
 
           <ul class="blog-list grid-list">
