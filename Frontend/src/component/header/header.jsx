@@ -80,7 +80,7 @@ export default function Header() {
       <div>
         <p className="contact-label">Free Call In U.S.A</p>
 
-        <a href="tel:12345678910" className="contact-number">1 234 567 8910</a>
+        <a href="tel:12345678910" className="contact-number">+1 440 482 8455</a>
       </div>
 
       <div className="contact-icon">
