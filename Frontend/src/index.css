@@ -864,7 +864,7 @@ animation: moveIn 5s ease-in;
 .chatbot{
   position: fixed;
   top: 81%;
-  left: 87%;
+  left: 65%;
     z-index: 4;
     color: #000;
     /* background-color: red; */
@@ -1142,7 +1142,9 @@ animation: moveIn 5s ease-in;
 
   }
 
-
+  .chatbot{
+    left: 85%;
+    }
 
   /**
    * REUSED STYLE
@@ -1299,6 +1301,7 @@ animation: moveIn 5s ease-in;
  * responsive for larger than 1200px screen
  */
 
+
 @media (min-width: 1200px) {
 
   /**
@@ -1309,7 +1312,8 @@ animation: moveIn 5s ease-in;
 
   .h1 { --fs-3: 12rem; }
 
-
+ 
+  
 
   /**
    * HEADER
