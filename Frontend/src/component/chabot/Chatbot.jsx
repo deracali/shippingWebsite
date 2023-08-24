@@ -3,6 +3,7 @@ import Chatbot from 'react-simple-chatbot'
 import 'semantic-ui-css/semantic.min.css'
 import { useState } from 'react'
 import {BiSolidMessageRoundedDetail} from 'react-icons/bi'
+import {Link} from 'react-router-dom'
 
 export default function ChatbotView() {
   const [open,setOpen] = useState(false)
@@ -51,8 +52,8 @@ export default function ChatbotView() {
 <div className={open? "chatbox-container-active":"chatbox-container"}>
     <Chatbot steps={steps}/>
 </div>
-<button className="chatbot" onClick={()=>setOpen(!open)}>
-    <BiSolidMessageRoundedDetail size={100}/>
+<button className="chatbot">
+   <a href="mailto:emailcourierswift@gmail.com"><BiSolidMessageRoundedDetail color='blue' size={100}/></a>
 </button>
   
 </>    

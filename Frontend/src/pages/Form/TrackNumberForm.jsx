@@ -32,7 +32,7 @@ const search = (e)=>{
 return (
     <>
     <Header/>
-    <div className={item.data? "formheight" : "form-container"}>
+    <div className="form-container">
     <form>
       <h1>Tracking Number Form</h1>
       <div className="ui divider"></div>

@@ -44,10 +44,8 @@ export default function Body() {
         </h2>
 
         <p className="hero-text">
-        Welcome to Premium Express. We offer door-to-door shipping to more than 200 countries—connecting people and businesses all over the world.   
+        Welcome to Courier Swift. We specialize in premium express services, providing seamless door-to-door shipping to over 200 countries, 295+ branches. Our mission is to unite individuals and enterprises across the globe.
         </p>
-
-        <a href="#" className="btn-outline">View Services</a>
 
         <img src={heroShape} width="116" height="116" loading="lazy"
           className="hero-shape shape-1"/>
@@ -91,7 +89,7 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                  Go beyond logistics, make the world go round and revolutionize business.
+                At CourierSwift, we're more than just a logistics company – we're your reliable partners in seamless global connectivity. With a relentless commitment to excellence, we've been transforming the way goods and information travel since our inception.
                 </p>
               </li>
 
@@ -101,7 +99,7 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                  Logistics through innovation, dedication, and technology. ready, set, done.
+                Our journey began with a vision to bridge gaps and bring people closer through efficient transportation. Over the years, that vision has evolved into a reality that powers businesses, fuels trade, and brings smiles to countless faces.
                 </p>
               </li>
 
@@ -111,7 +109,8 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                  We take pride in serving our customers safely. together with passion.
+                What sets us apart is our unwavering dedication to innovation. We harness the latest technologies and industry best practices to optimize every step of the logistics process. From state-of-the-art tracking systems to eco-conscious shipping methods, we're constantly pushing boundaries to offer you a service that's efficient, sustainable, and hassle-free.
+
                 </p>
               </li>
 
@@ -121,7 +120,8 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                  Imagination what we can easily see is only a small percentage.
+                But our story is incomplete without our team. Our diverse group of passionate professionals forms the heartbeat of CourierSwift. Their expertise, commitment, and tireless efforts are the driving force behind every successful delivery, every satisfied customer, and every milestone we achieve.
+
                 </p>
               </li>
 
@@ -141,13 +141,13 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                  The quality shows in every move we make where business lives.
+                At CourierSwift, we don't just move packages – we move dreams, aspirations, and progress. With a global reach that spans across borders and oceans, we're here to redefine logistics, one swift delivery at a time. Join us on this exhilarating journey as we pave the way for a connected world, where distances are no match for our determinations.
                 </p>
               </li>
 
             </ul>
 
-            <a href="#" className="btn">Learn More</a>
+          
 
           </div>
 
@@ -161,11 +161,7 @@ export default function Body() {
 
           <h2 className="h2 section-title">Trusted For Our Services</h2>
 
-          <p className="section-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever since
-            the when an
-            printer took.
-          </p>
+       
 
           <ul className="service-list grid-list">
 
@@ -181,13 +177,13 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service.
+                Experience the ultimate in swift deliveries with FlightSwift, the airborne extension of CourierSwift's services. When time is of the essence, FlightSwift soars above the rest, ensuring your packages arrive at their destination in the shortest time possible. Trust us for high-speed, top-priority shipping.
                 </p>
 
                 <a href="#" className="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span className="span">View Detail</span>
+               
                 </a>
 
               </div>
@@ -205,13 +201,13 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Every day, we go to great lengths to connect people and businesses all over the planet. 
+                At CourierSwift, we understand the importance of ground-level connectivity. That's why we offer RoadSwift, a comprehensive road transportation service that complements our courier expertise. RoadSwift ensures your shipments navigate local routes with ease, guaranteeing timely and secure deliveries.
                 </p>
 
                 <a href="#" className="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span className="span">View Detail</span>
+               
                 </a>
 
               </div>
@@ -229,13 +225,14 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Our fast, extensive road network across Europe provides a wide range of delivery services to meet your customer
+                Welcome to ShipSwift, a division of CourierSwift designed for international shipping needs. Our maritime logistics solutions provide a strategic advantage for businesses seeking to expand globally. With ShipSwift, your cargo sets sail with confidence, reaching distant shores efficiently and smoothly.
+
                 </p>
 
                 <a href="#" className="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span className="span">View Detail</span>
+                  
                 </a>
 
               </div>
@@ -253,7 +250,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Our quality and service are frequently recognised by external organisations. Many of these awards and accreditations
+                Introducing RailSwift, a seamless extension of CourierSwift's logistics solutions. RailSwift leverages the efficiency of rail transport to provide eco-friendly, long-haul delivery options for your cargo. Trust us to connect your goods across vast distances with reliability and precision.
                 </p>
 
                 <a href="#" className="btn-link">
@@ -277,13 +274,13 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                perceptions and values of employees and subcontractors with regards to safety.
+                Welcome to WarehouseSwift, a division of CourierSwift that takes care of your storage needs. With secure and strategically located facilities, WarehouseSwift ensures your goods are stored and managed efficiently. From short-term to long-term storage, trust us for seamless warehousing solutions that keep your inventory in top condition.
                 </p>
 
                 <a href="#" className="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span className="span">View Detail</span>
+             
                 </a>
 
               </div>
@@ -301,13 +298,13 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Many of these awards and accreditations are made on a national basis - an overview of these can be found on our country websites...
+                Discover ProjectSwift, an elite division of CourierSwift catering to intricate and large-scale shipments. With our expertise and global reach, we manage every detail of your specialized cargo, ensuring seamless delivery for your ambitious projects.
                 </p>
 
                 <a href="#" className="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
 
-                  <span className="span">View Detail</span>
+                
                 </a>
 
               </div>
@@ -333,7 +330,7 @@ export default function Body() {
               </p>
             </div>
 
-            <a href="#" className="btn">Read More</a>
+           
 
           </div>
 
@@ -432,7 +429,7 @@ export default function Body() {
                     <a href="#" className="card-title">Warehouse inventory</a>
                   </h3>
 
-                  <a href="#" className="card-link">Read More</a>
+                
                 </div>
 
               </div>
@@ -457,7 +454,7 @@ export default function Body() {
                     <a href="#" className="card-title">Minimize Manufacturing</a>
                   </h3>
 
-                  <a href="#" className="card-link">Read More</a>
+           
                 </div>
 
               </div>
@@ -482,7 +479,7 @@ export default function Body() {
                     <a href="#" className="card-title">Warehouse inventory</a>
                   </h3>
 
-                  <a href="#" className="card-link">Read More</a>
+          
                 </div>
 
               </div>
@@ -507,7 +504,7 @@ export default function Body() {
                     <a href="#" className="card-title">Minimize Manufacturing</a>
                   </h3>
 
-                  <a href="#" className="card-link">Read More</a>
+               
                 </div>
 
               </div>
@@ -532,7 +529,7 @@ export default function Body() {
                     <a href="#" className="card-title">Warehouse inventory</a>
                   </h3>
 
-                  <a href="#" className="card-link">Read More</a>
+                
                 </div>
 
               </div>
@@ -557,7 +554,7 @@ export default function Body() {
                     <a href="#" className="card-title">Minimize Manufacturing</a>
                   </h3>
 
-                  <a href="#" className="card-link">Read More</a>
+                
                 </div>
 
               </div>
@@ -568,101 +565,7 @@ export default function Body() {
         </div>
       </section>
 
-      <section class="section blog" aria-label="blog" id="blog">
-        <div class="container">
-
-          <p class="section-subtitle">Our Blogs</p>
-
-          <h2 class="h2 section-title">Recent news & events</h2>
-
-          <p class="section-text">
-          We live a balanced and busy life working from home, and sharing the joys we experience every day with our beloved minis!
-          </p>
-
-          <ul class="blog-list grid-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder">
-                  <img src={blog1} width="770" height="500" loading="lazy"
-                    alt="At the end of the day, going forward, a new normal that has evolved from. your only logistic partner."
-                    class="img-cover"/>
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="card-meta" datetime="2022-08-02">
-                    <span class="span">02</span> Aug
-                  </time>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">
-                      At the end of the day, going forward, a new normal that has evolved from. your only logistic
-                      partner.
-                    </a>
-                  </h3>
-
-                  <p class="card-text">
-                    New chip traps clusters of migrating tumor cells asperiortenetur, blanditiis odit. typesetting
-                    industry the standard
-                    dummy text ever since the when an printer.
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Read More</span>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder">
-                  <img src={blog2} width="770" height="500" loading="lazy"
-                    alt="Going forward, a new normal that has evolved from generation. moving your products across all borders."
-                    class="img-cover"/>
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="card-meta" datetime="2022-08-21">
-                    <span class="span">21</span> Aug
-                  </time>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">
-                      Going forward, a new normal that has evolved from generation. moving your products across all
-                      borders.
-                    </a>
-                  </h3>
-
-                  <p class="card-text">
-                    New chip traps clusters of migrating tumor cells asperiortenetur, blanditiis odit. typesetting
-                    industry the standard
-                    dummy text ever since the when an printer.
-                  </p>
-
-                  <a href="#" class="btn-link">
-                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
-
-                    <span class="span">Read More</span>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
+     
 
       <section class="section newsletter" aria-label="newsletter">
         <div class="container">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaTimes } from 'react-icons/fa';
 import { AiFillForward } from 'react-icons/ai';
@@ -15,13 +16,13 @@ export default function Header() {
   <div className="container">
 
     <h1>
-      <a href="/" className="logo">PremiumExpress</a>
+      <a href="/" className="logo">Courier Swift</a>
     </h1>
 
     <nav className={open? "navbar-active" : "navbar"}>
 
       <div className="navbar-top">
-        <a href="/" className="logo">PremiumExpress</a>
+        <a href="/" className="logo">Courier Swift</a>
       </div>
 
       <ul className="navbar-list">
@@ -51,24 +52,9 @@ export default function Header() {
         </li>
 
         <li className="navbar-item">
-          <a href="#blog" className="navbar-link">
-            <span>Blog</span>
-
-            
-          </a>
-        </li>
-
-        <li className="navbar-item">
-          <a href="#" className="navbar-link">
-            <span>Contact</span>
-
-            
-          </a>
-        </li>
-        <li className="navbar-item">
-          <a href="trackingno" className="navbar-link">
+          <Link to="trackingno" className="navbar-link">
             <span>Track</span>
-          </a>
+          </Link>
         </li>
 
       </ul>

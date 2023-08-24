@@ -2,10 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
 
 
 
@@ -140,6 +136,7 @@ body {
   color: var(--onyx);
   font-size: 1.6rem;
   line-height: 1.7;
+  font-family: 'Inter', sans-serif;
 }
 
 :focus-visible { outline-offset: 4px; }

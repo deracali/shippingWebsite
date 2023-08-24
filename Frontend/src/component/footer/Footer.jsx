@@ -11,12 +11,12 @@ export default function Footer() {
 
       <div className="footer-brand">
 
-        <a href="#" className="logo">PremiumExpress</a>
+        <a href="#" className="logo">Courier Swift</a>
 
         <p className="footer-text">
           Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
         </p>
-<p>Email: CustomerCarePremiumExpress@gmail.com </p>
+      <p>Email: emailcourierswift@gmail.com </p>
         {/* <ul className="social-list">
 
           <li>
