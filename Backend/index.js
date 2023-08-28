@@ -31,8 +31,8 @@ const sch = {
     product:String,
     qty:String,
     paymentMethod:String,
-    expectedDeliveryDate:String
-
+    expectedDeliveryDate:String,
+    createdAt:{ type: Date, required: true, default: Date.now }
 }
 
 const monmodel = mongoose.model("NEWCOL",sch)
@@ -47,6 +47,12 @@ app.get("/search/:key", async (req,res)=>{
         }
     )
     res.send(dataDB)
+})
+
+app.get("/",async(req,res)=>{
+    let data = await monmodel.find({}).sort({"createdAt":-1}).limit(20)
+    res.status(200).json(data)
+   
 })
 
 // POST
@@ -73,6 +79,24 @@ app.post("/post",async(req,res)=>{
 
     const val = await data.save()
     res.send("posted")
+})
+
+app.patch("/:id",async(req,res)=>{
+    let { id } = req.params
+
+    const dataval = await monmodel.findOneAndUpdate({_id:id},{
+        ...req.body
+    }) 
+
+    res.send(dataval)
+})
+
+app.delete("/:id",async(req,res)=>{
+    let { id } = req.params
+
+    const datadel = await monmodel.findOneAndDelete({_id:id}) 
+
+    res.send(datadel)
 })
 
 app.listen(3000,()=>{

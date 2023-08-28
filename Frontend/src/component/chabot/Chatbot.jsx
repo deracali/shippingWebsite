@@ -53,7 +53,7 @@ export default function ChatbotView() {
     <Chatbot steps={steps}/>
 </div>
 <button className="chatbot">
-   <a href="mailto:emailcourierswift@gmail.com"><BiSolidMessageRoundedDetail  size={50}/></a>
+   <a href="mailto:emailpremiumtct@gmail.com"><BiSolidMessageRoundedDetail  size={50}/></a>
 </button>
   
 </>    

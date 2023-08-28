@@ -44,7 +44,7 @@ export default function Body() {
         </h2>
 
         <p className="hero-text">
-        Welcome to Courier Swift. We specialize in premium express services, providing seamless door-to-door shipping to over 200 countries, 295+ branches. Our mission is to unite individuals and enterprises across the globe.
+        Welcome to PremiumTCT. We specialize in premium express services, providing seamless door-to-door shipping to over 200 countries, 295+ branches. Our mission is to unite individuals and enterprises across the globe.
         </p>
 
         <img src={heroShape} width="116" height="116" loading="lazy"
@@ -89,7 +89,7 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                At CourierSwift, we're more than just a logistics company – we're your reliable partners in seamless global connectivity. With a relentless commitment to excellence, we've been transforming the way goods and information travel since our inception.
+                At PremiumTCT, we're more than just a logistics company – we're your reliable partners in seamless global connectivity. With a relentless commitment to excellence, we've been transforming the way goods and information travel since our inception.
                 </p>
               </li>
 
@@ -120,7 +120,7 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                But our story is incomplete without our team. Our diverse group of passionate professionals forms the heartbeat of CourierSwift. Their expertise, commitment, and tireless efforts are the driving force behind every successful delivery, every satisfied customer, and every milestone we achieve.
+                But our story is incomplete without our team. Our diverse group of passionate professionals forms the heartbeat of PremiumTCT. Their expertise, commitment, and tireless efforts are the driving force behind every successful delivery, every satisfied customer, and every milestone we achieve.
 
                 </p>
               </li>
@@ -141,7 +141,7 @@ export default function Body() {
                 </div>
 
                 <p className="about-text">
-                At CourierSwift, we don't just move packages – we move dreams, aspirations, and progress. With a global reach that spans across borders and oceans, we're here to redefine logistics, one swift delivery at a time. Join us on this exhilarating journey as we pave the way for a connected world, where distances are no match for our determinations.
+                At PremiumTCT, we don't just move packages – we move dreams, aspirations, and progress. With a global reach that spans across borders and oceans, we're here to redefine logistics, one swift delivery at a time. Join us on this exhilarating journey as we pave the way for a connected world, where distances are no match for our determinations.
                 </p>
               </li>
 
@@ -177,7 +177,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Experience the ultimate in swift deliveries with FlightSwift, the airborne extension of CourierSwift's services. When time is of the essence, FlightSwift soars above the rest, ensuring your packages arrive at their destination in the shortest time possible. Trust us for high-speed, top-priority shipping.
+                Experience the ultimate in swift deliveries with FlightSwift, the airborne extension of PremiumTCT's services. When time is of the essence, FlightSwift soars above the rest, ensuring your packages arrive at their destination in the shortest time possible. Trust us for high-speed, top-priority shipping.
                 </p>
 
                 <a href="#" className="btn-link">
@@ -201,7 +201,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                At CourierSwift, we understand the importance of ground-level connectivity. That's why we offer RoadSwift, a comprehensive road transportation service that complements our courier expertise. RoadSwift ensures your shipments navigate local routes with ease, guaranteeing timely and secure deliveries.
+                At PremiumTCT, we understand the importance of ground-level connectivity. That's why we offer RoadSwift, a comprehensive road transportation service that complements our PremiumTCT expertise. RoadSwift ensures your shipments navigate local routes with ease, guaranteeing timely and secure deliveries.
                 </p>
 
                 <a href="#" className="btn-link">
@@ -225,7 +225,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Welcome to ShipSwift, a division of CourierSwift designed for international shipping needs. Our maritime logistics solutions provide a strategic advantage for businesses seeking to expand globally. With ShipSwift, your cargo sets sail with confidence, reaching distant shores efficiently and smoothly.
+                Welcome to ShipSwift, a division of PremiumTCT designed for international shipping needs. Our maritime logistics solutions provide a strategic advantage for businesses seeking to expand globally. With ShipSwift, your cargo sets sail with confidence, reaching distant shores efficiently and smoothly.
 
                 </p>
 
@@ -250,7 +250,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Introducing RailSwift, a seamless extension of CourierSwift's logistics solutions. RailSwift leverages the efficiency of rail transport to provide eco-friendly, long-haul delivery options for your cargo. Trust us to connect your goods across vast distances with reliability and precision.
+                Introducing RailSwift, a seamless extension of PremiumTCT's logistics solutions. RailSwift leverages the efficiency of rail transport to provide eco-friendly, long-haul delivery options for your cargo. Trust us to connect your goods across vast distances with reliability and precision.
                 </p>
 
                 <a href="#" className="btn-link">
@@ -274,7 +274,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Welcome to WarehouseSwift, a division of CourierSwift that takes care of your storage needs. With secure and strategically located facilities, WarehouseSwift ensures your goods are stored and managed efficiently. From short-term to long-term storage, trust us for seamless warehousing solutions that keep your inventory in top condition.
+                Welcome to WarehouseSwift, a division of PremiumTCT that takes care of your storage needs. With secure and strategically located facilities, WarehouseSwift ensures your goods are stored and managed efficiently. From short-term to long-term storage, trust us for seamless warehousing solutions that keep your inventory in top condition.
                 </p>
 
                 <a href="#" className="btn-link">
@@ -298,7 +298,7 @@ export default function Body() {
                 </h3>
 
                 <p className="card-text">
-                Discover ProjectSwift, an elite division of CourierSwift catering to intricate and large-scale shipments. With our expertise and global reach, we manage every detail of your specialized cargo, ensuring seamless delivery for your ambitious projects.
+                Discover ProjectSwift, an elite division of PremiumTCT catering to intricate and large-scale shipments. With our expertise and global reach, we manage every detail of your specialized cargo, ensuring seamless delivery for your ambitious projects.
                 </p>
 
                 <a href="#" className="btn-link">

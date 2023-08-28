@@ -50,7 +50,7 @@ return (
           />
         </div>
         <button onClick={search} className="fluid ui button blue">Submit</button>
-     <p>Past Tracking No</p>
+     <p>Paste Tracking No</p>
       </div>
     </form>
 
@@ -58,8 +58,12 @@ return (
       {item.map((item)=>(
       <div key={item._id}>
       <div className='location'>
-      <div className='Location'><p>Destination</p> <BsMap size={18}/> {item.location}</div>
-      <div className='Address'><p>Address</p><HiLocationMarker size={20}/> {item.address}</div>
+      <div className='Location'>
+        <p style={{color:"green"}}>Destination</p> 
+        <BsMap size={18}/> <span>{item.location}</span></div>
+      <div className='Address'>
+        <p style={{color:"green"}}>Address</p>
+        <HiLocationMarker size={20}/> <span>{item.address}</span></div>
       </div>
       <div className='steps'>
 <div><span>Left Warehouse</span><IoMdCheckmarkCircle color='green'/></div>

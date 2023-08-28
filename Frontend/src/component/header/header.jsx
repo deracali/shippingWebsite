@@ -16,13 +16,13 @@ export default function Header() {
   <div className="container">
 
     <h1>
-      <a href="/" className="logo">Courier Swift</a>
+      <Link to={"/"} className="logo">PremiumTCT</Link>
     </h1>
 
     <nav className={open? "navbar-active" : "navbar"}>
 
       <div className="navbar-top">
-        <a href="/" className="logo">Courier Swift</a>
+        <Link to={"/"} className="logo">PremiumTCT</Link>
       </div>
 
       <ul className="navbar-list">
@@ -52,7 +52,7 @@ export default function Header() {
         </li>
 
         <li className="navbar-item">
-          <Link to="trackingno" className="navbar-link">
+          <Link to="/trackingno" className="navbar-link">
             <span>Track</span>
           </Link>
         </li>
@@ -60,20 +60,6 @@ export default function Header() {
       </ul>
 
     </nav>
-
-    <div className="header-contact">
-
-      <div>
-        <p className="contact-label">Free Call In U.S.A</p>
-
-        <a href="tel:12345678910" className="contact-number">+1 440 482 8455</a>
-      </div>
-
-      <div className="contact-icon">
-        <BiPhoneCall/>
-      </div>
-
-    </div>
 
     <button className={open? "nav-close" : "nav-open"} onClick={()=>setOpen(true)}>
     <AiOutlineMenu color='#fff' size={32}/>

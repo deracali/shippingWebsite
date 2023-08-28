@@ -864,7 +864,7 @@ animation: moveIn 5s ease-in;
 .chatbot{
   position: fixed;
   top: 81%;
-  left: 65%;
+  left: 86%;
     z-index: 4;
     color: #000;
     /* background-color: red; */
@@ -1036,7 +1036,9 @@ animation: moveIn 5s ease-in;
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
-
+  .chatbot{
+    left: 92%;
+    }
 
   /**
    * HERO
@@ -1143,7 +1145,7 @@ animation: moveIn 5s ease-in;
   }
 
   .chatbot{
-    left: 85%;
+    left: 95%;
     }
 
   /**

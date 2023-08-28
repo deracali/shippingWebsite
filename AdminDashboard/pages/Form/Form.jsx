@@ -1,9 +1,7 @@
 import { useEffect,useState } from 'react'
 import React from 'react'
 import './form.css'
-import Footer from '../../component/footer/Footer'
-import Header from '../../component/header/header'
-import { useNavigate} from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom'
 
 
 
@@ -20,12 +18,12 @@ export default function Form() {
   const [paymentMethod,setPaymentMethod] = useState('')
   const [expectedDeliveryDate,setExpectedDeliveryDate] = useState('')
 
-  const navigate = useNavigate();
-
-
+   const navigate = useNavigate() 
+ 
+ 
 const handleFormSubmit = async(e)=>{
   e.preventDefault()
-const data = {number,location,address}
+const data = {number,location,address,packages,weight,shipmentMethod,carrierReferenceNo,product,qty,paymentMethod,expectedDeliveryDate}
   const response = await fetch('https://premiumexpress.onrender.com/post',{
 method:'POST',
 body:JSON.stringify(data),
@@ -34,15 +32,15 @@ headers:{
 }
   })
   const json = await response.json()
-  navigate('/');
+  navigate("/")
 }
 
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <div className="formheight">
     <form method='post' action='#' onSubmit={handleFormSubmit}>
-      <h1>Tracking Number Form</h1>
+      <h1>Tracking Number</h1>
       <div className="ui divider"></div>
       <div className="ui form">
         <div className="field">
@@ -180,11 +178,12 @@ headers:{
           />
         </div>
      
-        <button type='submit' className="fluid ui btn blue">Submit</button>
+        <button type='submit'  className="fluid ui btn blue">Submit</button>
+        <div style={{display:"inline-flex",alignItems:"center"}}><span style={{marginLeft: "20px",marginRight: "10px"}}>After Submitting form click</span>  <Link style={{color:"blue",fontSize:"14px"}} to={"/"}>Home</Link></div>
       </div>
     </form>
   </div>
-  <Footer/>
+
   </>
   )
 }
