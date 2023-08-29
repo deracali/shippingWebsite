@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 export default function Data() {
  const [item,setItem] = useState([])
 
+
  const getData = () =>{
   axios.get('https://premiumexpress.onrender.com')
   .then((response)=>{

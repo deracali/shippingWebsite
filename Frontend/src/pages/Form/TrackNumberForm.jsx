@@ -22,10 +22,18 @@ const search = (e)=>{
  setLoading(true)
     // GET request using axios inside useEffect  React hook
     axios.get('https://premiumexpress.onrender.com/search/' + number)
-        .then(response => setItem(response.data));
+        .then(response => {
+          setItem(response.data)
+          setLoading(false)
   
+          if (!response.ok) {
+            setError('Tracking Code not found. Please try again')
+            return
+        }
+        });
+       
   // empty dependency array means this effect will only run once (like componentDidMount in classes)
- setLoading(false)
+
  
 }
 
@@ -51,19 +59,28 @@ return (
         </div>
         <button onClick={search} className="fluid ui button blue">Submit</button>
      <p>Paste Tracking No</p>
+     <p className='trackText'>{error}</p>
       </div>
     </form>
 
     <div className='data-preview'>
+      {loading? (
+        <div className="spinner-square">
+        <div className="square-1 square"></div>
+        <div className="square-2 square"></div>
+        <div className="square-3 square"></div>
+</div>
+      ):(
+<>
       {item.map((item)=>(
       <div key={item._id}>
       <div className='location'>
       <div className='Location'>
         <p style={{color:"green"}}>Destination</p> 
-        <BsMap size={18}/> <span>{item.location}</span></div>
+        <BsMap size={18}/> <span className='trackText'>{item.location}</span></div>
       <div className='Address'>
         <p style={{color:"green"}}>Address</p>
-        <HiLocationMarker size={20}/> <span>{item.address}</span></div>
+        <HiLocationMarker size={20}/> <span className='trackText'>{item.address}</span></div>
       </div>
       <div className='steps'>
 <div><span>Left Warehouse</span><IoMdCheckmarkCircle color='green'/></div>
@@ -73,47 +90,48 @@ return (
 
 <div className='arrival'><span>{item.arrival}</span>{item.arrival? <FaPlaneArrival color={item.arrival? "green" : ""} /> : ""} </div>
       </div>
-<div>
+<div className='trackData'>
   <div className='mgb'>
     <p className='p'>Carrier</p>
-    <p>Packages</p>
+    <p className='trackText'>Packages</p>
   </div>
   <div className='mgb'>
     <p className='p'>Type of Shipment</p>
-    <p>{item.shipmentMethod}</p>
+    <p className='trackText'>{item.shipmentMethod}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Weight</p>
-    <p>{item.weight}</p>
+    <p className='trackText'>{item.weight}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Shipment method</p>
-    <p>{item.shipmentMethod}</p>
+    <p className='trackText'>{item.shipmentMethod}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Carrier Reference No</p>
-    <p>{item.carrierReferenceNo}</p>
+    <p className='trackText'>{item.carrierReferenceNo}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Product</p>
-    <p>{item.product}</p>
+    <p className='trackText'>{item.product}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Qty</p>
-    <p>{item.qty}</p>
+    <p className='trackText'>{item.qty}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Payment Mode</p>
-    <p>{item.paymentMethod}</p>
+    <p className='trackText'>{item.paymentMethod}</p>
   </div>
   <div className='mgb'>
     <p className='p'>Expected Delivery Date</p>
-    <p>{item.expectDeliveryDate}</p>
+    <p className='trackText'>{item.expectDeliveryDate}</p>
   </div>
 </div>
       </div>
       ))}
-
+      </>
+      )}
     </div>
   </div>
   <Footer/>
