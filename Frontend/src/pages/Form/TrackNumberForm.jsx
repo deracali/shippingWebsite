@@ -33,7 +33,7 @@ const search = (e)=>{
         });
        
   // empty dependency array means this effect will only run once (like componentDidMount in classes)
-
+setNumber("")
  
 }
 
