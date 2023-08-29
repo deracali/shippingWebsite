@@ -13,7 +13,7 @@ export default function TrackNumberForm() {
 const [number,setNumber] = useState("")
 const [item,setItem] = useState([])
 const [loading,setLoading] = useState(false)
-const [error,setError] = useState("") 
+const [error,setError] = useState("")
 
 const search = (e)=>{
   e.preventDefault()
@@ -23,19 +23,24 @@ const search = (e)=>{
     // GET request using axios inside useEffect  React hook
     axios.get('https://premiumexpress.onrender.com/search/' + number)
         .then(response => {
-          setItem(response.data)
+          
           setLoading(false)
-  
-          if (!response.ok) {
-            setError('Tracking Code not found. Please try again')
-            return
-        }
-        });
+
+          if(!response.data[0]){
+            setError("Tracking Number Not Found, Try Again")
+            setItem([])
+          }else{
+            setError("")
+            setItem(response.data)
+          }
+        })
        
   // empty dependency array means this effect will only run once (like componentDidMount in classes)
 setNumber("")
  
 }
+
+
 
 return (
     <>
@@ -59,7 +64,7 @@ return (
         </div>
         <button onClick={search} className="fluid ui button blue">Submit</button>
      <p>Paste Tracking No</p>
-     <p className='trackText'>{error}</p>
+  <p className='trackText'>{error}</p>
       </div>
     </form>
 
